@@ -1,42 +1,37 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/utils/app_constants.dart';
-import '../../../../core/utils/app_enums.dart';
-import '../../../../core/utils/app_extensions.dart';
+import '../../../../core/widgets/reveal.dart';
+import '../../../../data/portfolio_data.dart';
 import 'detailed_service_item.dart';
 
 class DetailedServicesGrid extends StatelessWidget {
   const DetailedServicesGrid({super.key});
 
+  static const double _spacing = 20;
+
   @override
   Widget build(BuildContext context) {
-    return GridView.builder(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: _getCrossAxisCount(context.width),
-        crossAxisSpacing: 16,
-        mainAxisSpacing: 16,
-      ),
-      itemBuilder: (context, index) {
-        return DetailedServiceItem(
-          service: AppConstants.services[index],
+    final services = PortfolioData.profile.services;
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final columns = (constraints.maxWidth / 300).floor().clamp(1, 3);
+        final width =
+            (constraints.maxWidth - _spacing * (columns - 1)) / columns;
+        return Wrap(
+          spacing: _spacing,
+          runSpacing: _spacing,
+          children: [
+            for (var i = 0; i < services.length; i++)
+              Reveal(
+                delay: Duration(milliseconds: 120 * i),
+                child: SizedBox(
+                  width: width,
+                  child: DetailedServiceItem(service: services[i]),
+                ),
+              ),
+          ],
         );
       },
-      itemCount: AppConstants.services.length,
     );
-  }
-
-  int _getCrossAxisCount(double deviceWidth) {
-    int numOfServices = AppConstants.services.length;
-    if (deviceWidth < DeviceType.mobile.getMaxWidth()) {
-      return 1;
-    } else if (deviceWidth < DeviceType.ipad.getMaxWidth()) {
-      return 2;
-    } else if (deviceWidth < DeviceType.smallScreenLaptop.getMaxWidth()) {
-      return 3;
-    } else {
-      return numOfServices > 3 ? 3 : numOfServices;
-    }
   }
 }

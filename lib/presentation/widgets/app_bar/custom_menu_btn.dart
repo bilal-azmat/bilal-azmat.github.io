@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../core/utils/app_colors.dart';
 import '../../../core/utils/app_enums.dart';
 import '../../blocs/home_bloc/home_bloc.dart';
 
@@ -11,41 +12,28 @@ class CustomMenuBtn extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<HomeBloc, HomeState>(
       builder: (context, state) {
-        return SizedBox(
-          width: 40,
-          child: AnimatedCrossFade(
-            crossFadeState: _getCrossFadeState(context),
-            firstChild: TextButton(
-              onPressed: () => _menuBtnClicked(context),
-              child: const Icon(Icons.menu),
+        final open = context.read<HomeBloc>().appBarHeaderAxis ==
+            AppBarHeadersAxis.vertical;
+        return IconButton(
+          onPressed: () => context.read<HomeBloc>().add(
+                ChangeAppBarHeadersAxis(
+                  open
+                      ? AppBarHeadersAxis.horizontal
+                      : AppBarHeadersAxis.vertical,
+                ),
+              ),
+          icon: AnimatedSwitcher(
+            duration: const Duration(milliseconds: 250),
+            transitionBuilder: (child, animation) =>
+                RotationTransition(turns: animation, child: child),
+            child: Icon(
+              open ? Icons.close_rounded : Icons.menu_rounded,
+              key: ValueKey(open),
+              color: AppColors.white,
             ),
-            secondChild: TextButton(
-              onPressed: () => _closeBtnClicked(context),
-              child: const Icon(Icons.close),
-            ),
-            duration: const Duration(milliseconds: 200),
           ),
         );
       },
     );
-  }
-
-  _menuBtnClicked(BuildContext context) {
-    context.read<HomeBloc>().add(
-          ChangeAppBarHeadersAxis(AppBarHeadersAxis.vertical),
-        );
-  }
-
-  _closeBtnClicked(BuildContext context) {
-    context.read<HomeBloc>().add(
-          ChangeAppBarHeadersAxis(AppBarHeadersAxis.horizontal),
-        );
-  }
-
-  CrossFadeState _getCrossFadeState(BuildContext context) {
-    final currentHeaderAxis = context.read<HomeBloc>().appBarHeaderAxis;
-    return currentHeaderAxis == AppBarHeadersAxis.horizontal
-        ? CrossFadeState.showFirst
-        : CrossFadeState.showSecond;
   }
 }

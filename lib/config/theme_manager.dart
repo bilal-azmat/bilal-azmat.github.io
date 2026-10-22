@@ -10,15 +10,32 @@ abstract class CustomTheme {
         highlightColor: AppColors.secondaryColor,
         scaffoldBackgroundColor: AppColors.scaffoldColor,
         fontFamily: 'Poppins',
+        textSelectionTheme: TextSelectionThemeData(
+          cursorColor: AppColors.secondaryColor,
+        ),
         inputDecorationTheme: InputDecorationTheme(
-          fillColor: AppColors.primaryLight,
+          fillColor: AppColors.white.withValues(alpha: .04),
           filled: true,
-          labelStyle: AppStyles.s14,
+          labelStyle: AppStyles.s14.copyWith(color: AppColors.lowPriority),
+          floatingLabelStyle:
+              AppStyles.s14.copyWith(color: AppColors.secondaryColor),
+          contentPadding:
+              const EdgeInsets.symmetric(horizontal: 18, vertical: 18),
           enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: AppColors.lowPriority),
+            borderRadius: BorderRadius.circular(14),
+            borderSide: BorderSide(color: AppColors.glassBorder),
           ),
           focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: AppColors.primaryColor),
+            borderRadius: BorderRadius.circular(14),
+            borderSide: BorderSide(color: AppColors.primaryColor, width: 1.5),
+          ),
+          errorBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(14),
+            borderSide: const BorderSide(color: Colors.redAccent),
+          ),
+          focusedErrorBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(14),
+            borderSide: const BorderSide(color: Colors.redAccent, width: 1.5),
           ),
         ),
       );

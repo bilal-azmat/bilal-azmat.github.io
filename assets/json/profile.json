@@ -1,0 +1,105 @@
+{
+  "name": "Bilal Azmat",
+  "title": "Senior Flutter Developer",
+  "headline": "Android & iOS · Dart · BLoC · Clean Architecture · AI-Assisted Development",
+  "roles": ["Senior Flutter Developer", "Mobile Team Lead", "Clean Architecture Advocate", "AI-Assisted Developer"],
+  "availability": "Open to Senior & Lead Flutter roles",
+  "photo": null,
+  "hero_badges": ["Flutter", "Dart", "BLoC", "Firebase", "Clean Arch", "AI"],
+  "location": "Lahore, Pakistan",
+  "email": "bilalazmat021@gmail.com",
+  "resume": "assets/pdf/resume.pdf",
+  "intro": "Senior Flutter Developer with 7+ years of experience and 20+ production apps shipped to the App Store and Google Play. I lead mobile teams, own the architecture, and build fast, stable apps for Android, iOS and Web from one Flutter codebase.",
+  "about": [
+    "I'm a Senior Flutter Developer based in Lahore, Pakistan, with 7+ years of experience and 20+ production apps shipped to the App Store and Google Play. I lead mobile teams, own the architecture, and turn product requirements into fast, stable, maintainable apps for Android, iOS and Web from one Flutter codebase.",
+    "At 2B Vision Technologies I lead 10+ production Flutter apps in healthcare and logistics for TrueMedIT, including a white-label phlebotomy platform used by several labs, the SmartPGX genomics platform and a patient portal with telemedicine. Before that I built delivery, ride-hailing and booking apps at Sigi Technologies, and I've built the WiseUp suite of fintech, streaming and POS apps with Globulars since 2019.",
+    "I mentor developers in BLoC, MVVM and Clean Architecture through code reviews, pairing and structured training. I've cut app load times by moving to BLoC, caching API responses and loading data only when needed, and reduced post-release bugs by introducing code reviews, unit and widget tests, and CI checks before every release. I partner with product, design, backend and QA in Scrum sprints, and use AI-assisted development (Claude Code, ChatGPT) for faster prototyping, refactoring, code reviews and tests.",
+    "I'm open to Senior and Lead Flutter / Mobile Engineering roles: remote, hybrid or on-site, and open to relocation. Let's connect, or message me directly."
+  ],
+  "stats": [
+    { "value": "7+", "label": "Years of experience" },
+    { "value": "20+", "label": "Production apps shipped" },
+    { "value": "3", "label": "Developers mentored" }
+  ],
+  "experience": [
+    {
+      "designation": "Senior Flutter Developer",
+      "company_name": "2B Vision Technologies",
+      "client": "Client: TrueMedIT (USA)",
+      "duration": "Jan 2022 - Present",
+      "location": "Lahore, Pakistan",
+      "logo": "assets/images/truemed.png",
+      "highlights": [
+        "End-to-end leadership of 10+ production Flutter apps in healthcare and logistics, from architecture to App Store / Play Store release and post-launch maintenance.",
+        "Engineered a white-label phlebotomy platform that automated specimen workflows, GPS-based mileage billing and order tracking, replacing paper-based processes.",
+        "Mentored 3 junior Flutter developers in BLoC, MVVM and Clean Architecture through code reviews and structured training.",
+        "Integrated real-time features with SignalR, Twilio and WebSocket, plus Apple Health, Google Maps, payment gateways and Flutter Web builds from the same codebase.",
+        "Set coding standards and run code reviews, working with product, design, backend and QA in Scrum.",
+        "Set up CI/CD with GitHub Actions, Codemagic and Fastlane, with unit and widget tests before every release."
+      ]
+    },
+    {
+      "designation": "Flutter Developer",
+      "company_name": "Sigi Technologies",
+      "duration": "Apr 2021 - Jan 2022",
+      "location": "Lahore, Pakistan",
+      "logo": "assets/images/sigi.png",
+      "highlights": [
+        "Developed 5+ production apps for e-commerce, delivery and logistics clients using Flutter, REST APIs and Firebase.",
+        "Built live order tracking, chat and push notifications with Firebase and WebSockets.",
+        "Integrated Google Maps and navigation flows for delivery and ride-hailing apps.",
+        "Structured apps with GetX and BLoC to keep codebases maintainable and bugs easy to trace."
+      ]
+    },
+    {
+      "designation": "Flutter Developer | Website Developer",
+      "company_name": "Globulars",
+      "duration": "Mar 2019 - Present",
+      "location": "Lahore, Pakistan",
+      "logo": "assets/images/globulars.png",
+      "highlights": [
+        "Developed 8+ production Flutter apps in fintech, media streaming and service booking, including the WiseUp suite.",
+        "Built a digital wallet with multi-currency support, gift cards, loyalty programs, crypto trading and MasterCard integration.",
+        "Created a streaming platform with multi-player support (YouTube, Vimeo), subscriptions and social login.",
+        "Engineered POS and merchant apps with real-time transactions, NFC card payments and secure payment processing.",
+        "Integrated payment gateways and social login, and built websites with PHP, JavaScript and HTML / CSS.",
+        "Managed end-to-end releases on Google Play and the App Store, including store compliance, performance tuning and post-launch fixes."
+      ]
+    }
+  ],
+  "education": {
+    "degree": "BS Computer Science",
+    "institute": "Arid Agriculture University, Rawalpindi",
+    "duration": "2014 - 2018"
+  },
+  "services": [
+    {
+      "service": "MOBILE APP DEVELOPMENT",
+      "logo": "assets/images/android.svg",
+      "description": "Cross-platform Android & iOS apps in Flutter, from architecture and UI to App Store / Play Store release and post-launch support."
+    },
+    {
+      "service": "FLUTTER WEB & BACKEND",
+      "logo": "assets/images/slider.svg",
+      "description": "Flutter Web from the same codebase, REST / GraphQL integration, Firebase, Supabase and .NET Core Web APIs."
+    },
+    {
+      "service": "ARCHITECTURE & TEAM LEAD",
+      "logo": "assets/images/ruler.svg",
+      "description": "Clean Architecture, BLoC / MVVM, CI/CD pipelines, code reviews and mentoring to keep teams shipping stable releases."
+    }
+  ],
+  "skills": [
+    { "group": "Languages & Frameworks", "items": ["Dart", "Flutter", "FlutterFlow", "Kotlin", "Swift", "PHP", "JavaScript", "HTML/CSS"] },
+    { "group": "Architecture", "items": ["Clean Architecture", "MVVM", "MVC", "SOLID Principles", "Feature-first Modular Structure"] },
+    { "group": "State Management", "items": ["BLoC / Cubit", "Riverpod", "Provider", "GetX"] },
+    { "group": "Backend & Cloud", "items": [".NET Core (Web APIs)", "Firebase (Auth, Firestore, Storage, Functions, FCM)", "Supabase", "AWS", "Azure"] },
+    { "group": "Database", "items": ["SQLite", "Hive", "MongoDB", "Shared Preferences", "Local Caching & Sync"] },
+    { "group": "APIs & Real-time", "items": ["REST APIs", "GraphQL", "WebSocket", "SignalR", "Twilio", "Agora SDK", "Interceptors"] },
+    { "group": "UI / UX", "items": ["Material Design", "Cupertino", "Custom Animations", "Responsive UI"] },
+    { "group": "Testing", "items": ["Unit Tests", "Widget Tests", "Integration Tests", "Performance Profiling"] },
+    { "group": "CI/CD & Tools", "items": ["GitHub Actions", "Codemagic", "Fastlane", "Git", "Android Studio", "VS Code", "Xcode", "Postman"] },
+    { "group": "AI", "items": ["Claude Code", "ChatGPT", "Firebase / Google ML Kit"] },
+    { "group": "Other", "items": ["Payment Gateways", "Google Maps", "Push Notifications", "Apple Health", "Scrum", "Code Reviews", "Pair Programming", "Mentoring"] }
+  ]
+}

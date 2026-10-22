@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:universal_html/html.dart' as html;
 
 import '../../../../core/utils/app_colors.dart';
-import '../../../../core/utils/app_enums.dart';
-import '../../../../core/utils/app_extensions.dart';
 import '../../../../core/widgets/custom_button.dart';
+import '../../../../data/portfolio_data.dart';
 import '../../../blocs/home_bloc/home_bloc.dart';
 
 class IntoActions extends StatelessWidget {
@@ -12,37 +12,33 @@ class IntoActions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<Widget> actions = [
-      CustomButton(
-        label: AppBarHeaders.aboutMe.getString(),
-        icon: Icons.person,
-        backgroundColor: AppColors.primaryColor,
-        onPressed: () {
-          context.read<HomeBloc>().add(ChangeAppBarHeadersIndex(1));
-        },
-        width: 160,
-      ),
-      context.width < DeviceType.ipad.getMaxWidth()
-          ? const SizedBox(height: 6)
-          : const SizedBox(width: 32),
-      CustomButton(
-        label: AppBarHeaders.projects.getString(),
-        icon: Icons.remove_red_eye,
-        borderColor: AppColors.primaryColor,
-        onPressed: () {
-          context.read<HomeBloc>().add(ChangeAppBarHeadersIndex(2));
-        },
-        width: 160,
-      ),
-    ];
-    return context.width < DeviceType.ipad.getMaxWidth()
-        ? Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: actions,
-          )
-        : Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: actions,
-          );
+    return Wrap(
+      spacing: 16,
+      runSpacing: 12,
+      alignment: WrapAlignment.center,
+      children: [
+        CustomButton(
+          label: 'View my work',
+          icon: Icons.arrow_forward,
+          backgroundColor: AppColors.primaryColor,
+          onPressed: () {
+            context.read<HomeBloc>().add(ChangeAppBarHeadersIndex(2));
+          },
+          width: 190,
+          height: 52,
+        ),
+        CustomButton(
+          label: 'View Resume',
+          icon: Icons.description_outlined,
+          borderColor: AppColors.primaryColor,
+          onPressed: () {
+            // Flutter web serves bundled assets under /assets/<asset path>.
+            html.window.open('assets/${PortfolioData.profile.resume}', '_blank');
+          },
+          width: 190,
+          height: 52,
+        ),
+      ],
+    );
   }
 }

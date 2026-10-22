@@ -1,0 +1,650 @@
+[
+  {
+    "title": "TMIT Phlebo",
+    "company_name": "2B Vision Technologies",
+    "client": "TrueMedIT",
+    "short_description": "White-label phlebotomy platform that replaced paper-based specimen collection and mileage billing for several labs.",
+    "description": "A white-label app for phlebotomists who collect specimens from the facilities their lab assigns them. Each day starts with a facilities list that shows check-in status and open orders, and an optimised route on Google Maps with numbered stops, live distance and one-tap navigation. At each facility, orders are grouped into assigned, pending, completed and future tabs, with STAT orders flagged. Each order shows its timeline, patient, tests and specimens. Phlebotomists can collect partial specimens, recollect, redraw or cancel, then drop specimens off at the lab. An analytics dashboard tracks facilities visited, orders collected and monthly trends, and push notifications flag new assignments and STAT orders. The same codebase ships as separate branded apps for each lab.",
+    "highlights": [
+      "Optimised multi-stop route on Google Maps with numbered stops, polylines and one-tap navigation",
+      "Facility check-in and check-out with GPS-based mileage for billing, removing most manual billing errors",
+      "Order tabs (assigned, pending, completed, future) with filters, sorting, paging and STAT flags",
+      "Partial collection, recollection, redraw and cancellation flows with live status updates",
+      "Analytics dashboard with daily summary and weekly and monthly order trends",
+      "Push notifications for new assignments and STAT orders, with deep links to the order",
+      "Shipped as branded apps for TMIT, Crescent, PLS and Shelton labs"
+    ],
+    "tech_stack": ["Flutter", "BLoC", "MVVM", "Google Maps", "REST APIs", "Firebase"],
+    "icon": "assets/images/projects/tmit_phlebo_icon.webp",
+    "images": [
+      "assets/images/projects/tmit_phlebo_store_1.webp",
+      "assets/images/projects/tmit_phlebo_store_2.webp",
+      "assets/images/projects/tmit_phlebo_store_3.webp",
+      "assets/images/projects/tmit_phlebo_store_4.webp",
+      "assets/images/projects/tmit_phlebo_store_5.webp",
+      "assets/images/projects/tmit_phlebo_store_6.webp",
+      "assets/images/projects/tmit_phlebo_store_7.webp"
+    ],
+    "links": [
+      { "label": "TMIT", "url": "https://play.google.com/store/apps/details?id=com.tmit.phlebotomist" },
+      { "label": "Crescent", "url": "https://play.google.com/store/apps/details?id=com.tmit.crescentPhleb" },
+      { "label": "PLS", "url": "https://play.google.com/store/apps/details?id=com.tmit.pls" },
+      { "label": "Shelton", "url": "https://play.google.com/store/apps/details?id=com.tmit.shelton" }
+    ]
+  },
+  {
+    "title": "Req Flow",
+    "company_name": "2B Vision Technologies",
+    "client": "TrueMedIT",
+    "short_description": "Global requisition management for blood, infectious disease and specialised test orders across multiple healthcare portals.",
+    "description": "Req Flow is a single app for creating and managing lab requisitions across multiple healthcare portals. A permission-driven dashboard shows each user only the workflows their role allows. Staff create blood, infectious disease and specialised test orders through guided, step-by-step forms that the lab configures on the server: facility, physician, patient, insurance, tests and specimens. Orders are checked in at facilities in bulk by scanning barcodes or entering accession numbers by hand, and each order is confirmed instantly. Supply orders for every facility are tracked as new, shipped or rejected. Physicians manage their own signature and choose which team members may use it. It gives labs one unified workflow instead of a separate tool per portal.",
+    "highlights": [
+      "Server-driven requisition forms rendering 30+ field types, test panels and specimen sources from lab configuration",
+      "Bulk check-in by barcode scan or manual entry, with undo, rejection reasons and missing-field prompts",
+      "Supply order management across new, shipped and rejected orders with courier tracking",
+      "Physician signature capture with per-user sharing",
+      "Role- and claim-based dashboard, lab switching, multi-factor authentication and token refresh",
+      "Light and dark themes, with Firebase push notifications"
+    ],
+    "tech_stack": ["Flutter", "BLoC", "Clean Architecture", "REST APIs", "Firebase", "Barcode Scanning"],
+    "icon": "assets/images/projects/req_flow_icon.webp",
+    "images": [
+      "assets/images/projects/req_flow_store_1.webp",
+      "assets/images/projects/req_flow_store_2.webp",
+      "assets/images/projects/req_flow_store_3.webp",
+      "assets/images/projects/req_flow_store_4.webp",
+      "assets/images/projects/req_flow_store_5.webp",
+      "assets/images/projects/req_flow_store_6.webp"
+    ],
+    "links": []
+  },
+  {
+    "title": "SmartPGX",
+    "company_name": "2B Vision Technologies",
+    "client": "TrueMedIT",
+    "short_description": "Pharmacogenomics patient app with drug-gene interaction reports and a built-in Hivve token wallet that rewards patients for sharing data.",
+    "description": "SmartPGX (shipped as Hivve) lets patients manage their genetic information and medication history in one place. Patients record their phenotype for each gene (CYP2C19, CYP2D6, CYP2C9, VKORC1 and more) and build a medication list from the DrugBank catalogue. The app then generates an interaction report that ranks drug-to-drug and drug-to-gene interactions as major, moderate or minor, flags the genes involved, and offers management guidance and lower-cost alternatives. Patients can invite doctors and pharmacists to review their medicines, book pharmacist reviews and join video consultations. A built-in Hivve token wallet tracks the patient's onboarding progress, lets them send and receive tokens by QR code, shows live transaction history and rewards them for joining research campaigns. A product store with cart, shipping addresses and saved Stripe cards completes the experience. HIPAA compliance was prioritised throughout.",
+    "highlights": [
+      "Drug-to-drug and drug-to-gene interaction reports grouped by severity, with affected genes, management guidance and alternatives",
+      "Gene-by-gene phenotype profile used to personalise every interaction report",
+      "Hivve token wallet with send, receive by QR code and real-time transaction updates over Socket.IO",
+      "Research campaigns that reward patients in Hivve tokens for sharing anonymised data",
+      "Pharmacist review booking with Agora video consultations and doctor invitations",
+      "Product store with cart, shipping addresses and saved Stripe cards",
+      "Responsive mobile and Flutter Web layouts from one codebase, with HIPAA-compliant architecture"
+    ],
+    "tech_stack": ["Flutter", "Flutter Web", "BLoC", "REST APIs", "Socket.IO", "Web3 / WalletConnect", "Stripe", "Agora SDK", "Firebase", "HIPAA"],
+    "icon": "assets/images/projects/smartpgx_icon.webp",
+    "images": [
+      "assets/images/projects/smartpgx_store_1.webp",
+      "assets/images/projects/smartpgx_store_2.webp",
+      "assets/images/projects/smartpgx_store_3.webp",
+      "assets/images/projects/smartpgx_store_4.webp",
+      "assets/images/projects/smartpgx_store_5.webp"
+    ],
+    "links": []
+  },
+  {
+    "title": "TrueMedIT Patient Portal",
+    "company_name": "2B Vision Technologies",
+    "client": "TrueMedIT",
+    "short_description": "Patient app for medical records, lab results, medications, telehealth and guided at-home antigen testing.",
+    "description": "The patient app of TrueMedIT's LIMS & CRM. Patients see their medical records in one place: problems, immunizations, vitals, insurance, allergies and lab results, which they can browse by date or by test and open as PDF reports. They manage their medications with a daily schedule, book appointments with physicians and facilities, join video telehealth visits and track health data such as steps, heart rate and blood pressure. A guided at-home antigen test walks patients through setup, records the test on video, runs a 15-minute timer and uploads the result, with identity and vaccine verification built in. The SmartPGX module adds genome-based prescribing insights. A physician module in the same app covers appointments, toxicology and blood requisitions, supply requests and order tracking.",
+    "highlights": [
+      "Medical records hub: problems, immunizations, vitals, insurance, allergies and lab results",
+      "Lab results by date or by test, with PDF reports",
+      "Medication list and daily schedule with reminders",
+      "Guided at-home antigen test with video capture, timer and result upload",
+      "Identity and vaccine card verification with camera capture",
+      "Appointment booking and video telehealth with Agora",
+      "Health trackers with Apple Health and Google Fit",
+      "Physician module for requisitions, supply requests and order tracking",
+      "SmartPGX genomics module and Firebase push notifications"
+    ],
+    "tech_stack": ["Flutter", "BLoC", "Agora SDK", "REST APIs", "Firebase", "Google Maps", "HealthKit / Google Fit"],
+    "icon": null,
+    "images": [
+      "assets/images/projects/patient_portal_store_1.webp",
+      "assets/images/projects/patient_portal_store_2.webp",
+      "assets/images/projects/patient_portal_store_3.webp",
+      "assets/images/projects/patient_portal_store_4.webp",
+      "assets/images/projects/patient_portal_store_5.webp",
+      "assets/images/projects/patient_portal_store_6.webp"
+    ],
+    "links": []
+  },
+  {
+    "title": "USPS OTC",
+    "company_name": "2B Vision Technologies",
+    "client": "TrueMedIT",
+    "short_description": "Antigen testing app built for the United States Postal Service.",
+    "description": "USPS OTC is an antigen testing application built for the United States Postal Service. The app guides users through antigen testing with video capture, image processing, user verification and vaccine verification. Media is stored in Azure Blob Storage.",
+    "highlights": [
+      "Guided test flow with video capture",
+      "Image processing for test results",
+      "User and vaccine verification",
+      "Azure Blob Storage for media"
+    ],
+    "tech_stack": ["Flutter", "BLoC", "REST APIs", "Azure Blob Storage"],
+    "icon": null,
+    "images": [],
+    "links": []
+  },
+  {
+    "title": "Scanner App",
+    "company_name": "2B Vision Technologies",
+    "client": "TrueMedIT",
+    "short_description": "Document scanner that extracts requisition data automatically with AWS Textract.",
+    "description": "A mobile scanner app for uploading images and documents with real-time camera scanning and editing. It uses AWS Textract to extract structured data automatically, which is then used to create requisitions on the TMIT portal. Files are handled securely through AWS cloud storage.",
+    "highlights": [
+      "Real-time camera scanning and editing",
+      "Automatic data extraction with AWS Textract",
+      "Creates requisitions on the TMIT portal from scanned documents",
+      "Secure AWS cloud storage"
+    ],
+    "tech_stack": ["Flutter", "BLoC", "AWS Textract", "AWS S3"],
+    "icon": null,
+    "images": [],
+    "links": []
+  },
+  {
+    "title": "Learn Quran",
+    "company_name": "2B Vision Technologies",
+    "client": null,
+    "short_description": "Offline app for learning the most frequent words of the Quran through audio lessons, word-pairing activities and timed quizzes.",
+    "description": "Learn Quran teaches the vocabulary of the Quran in 20 structured lessons. Each lesson plays the words one by one with audio pronunciation, the English meaning and how many times the word occurs in the Quran. After listening, learners match Arabic words to their meanings in a drag-and-drop word-pairing activity, then take a timed multiple-choice quiz with 30 seconds per question. Scoring at least 80% unlocks the next lesson, and every attempt is saved to the learner's quiz history. Everything runs offline, with accounts, progress and results stored on the device, and in-app tutorials guide first-time users through each activity.",
+    "highlights": [
+      "20 audio lessons with Arabic word, English meaning and occurrence count",
+      "Drag-and-drop word-pairing activity with instant feedback",
+      "Timed multiple-choice quizzes with an 80% pass mark to unlock the next lesson",
+      "Quiz history with marks and pass status for every lesson",
+      "Fully offline: local accounts, progress and results in SQLite",
+      "In-app tutorials and animated onboarding for each activity"
+    ],
+    "tech_stack": ["Flutter", "Provider", "SQLite", "Audioplayers", "Shared Preferences"],
+    "icon": "assets/images/projects/learn_quran_icon.webp",
+    "images": [
+      "assets/images/projects/learn_quran_store_1.webp",
+      "assets/images/projects/learn_quran_store_2.webp",
+      "assets/images/projects/learn_quran_store_3.webp",
+      "assets/images/projects/learn_quran_store_4.webp",
+      "assets/images/projects/learn_quran_store_5.webp",
+      "assets/images/projects/learn_quran_store_6.webp"
+    ],
+    "links": []
+  },
+  {
+    "title": "WiseUp Wallet",
+    "company_name": "Globulars",
+    "client": "WiseUp Solutions",
+    "short_description": "Digital wallet with cards, gift cards, loyalty, transfers, mobile top-ups and crypto trading.",
+    "description": "WiseUp Wallet is a digital wallet for managing money, purchases and financial services in one place. Users fund their wallet with any Visa or MasterCard, buy gift cards from popular retailers, keep loyalty cards, shop online with MasterCard, send money, top up mobile phones and trade cryptocurrency.",
+    "highlights": [
+      "Wallet funding with Visa / MasterCard",
+      "Gift cards, loyalty cards and online shopping",
+      "Money transfers and mobile top-ups",
+      "Cryptocurrency trading",
+      "Biometric login, OTP verification and QR payments"
+    ],
+    "tech_stack": ["Flutter", "BLoC", "Freezed", "Dio", "Firebase", "Google Maps"],
+    "icon": "assets/images/projects/wiseup_wallet_icon.webp",
+    "images": [
+      "assets/images/projects/wiseup_wallet_1.webp",
+      "assets/images/projects/wiseup_wallet_2.webp",
+      "assets/images/projects/wiseup_wallet_3.webp",
+      "assets/images/projects/wiseup_wallet_4.webp",
+      "assets/images/projects/wiseup_wallet_5.webp",
+      "assets/images/projects/wiseup_wallet_6.webp"
+    ],
+    "links": [
+      { "label": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.wiseup.wallet" }
+    ]
+  },
+  {
+    "title": "WiseUp TV",
+    "company_name": "Globulars",
+    "client": "WiseUp Solutions",
+    "short_description": "Streaming platform for documentaries, science, history and culture, on mobile and web.",
+    "description": "WiseUp TV streams documentaries, science, history, health education and cultural programmes. The app plays content from multiple sources including YouTube and Vimeo, supports Chromecast, offline downloads and in-app subscriptions, and signs users in with Google, Apple or email. A Flutter Web version serves the same catalogue in the browser.",
+    "highlights": [
+      "Multiple video players including YouTube and Vimeo",
+      "Chromecast support and offline downloads",
+      "In-app purchase subscriptions",
+      "Google, Apple and email sign-in",
+      "OneSignal push notifications and a Flutter Web version"
+    ],
+    "tech_stack": ["Flutter", "Flutter Web", "BLoC", "Firebase Auth", "Hive", "In-App Purchase"],
+    "icon": "assets/images/projects/wiseup_tv_icon.webp",
+    "images": [
+      "assets/images/projects/wiseup_tv_1.webp",
+      "assets/images/projects/wiseup_tv_2.webp",
+      "assets/images/projects/wiseup_tv_3.webp",
+      "assets/images/projects/wiseup_tv_4.webp"
+    ],
+    "links": [
+      { "label": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.wiseuptv.club" }
+    ]
+  },
+  {
+    "title": "WiseUp Club",
+    "company_name": "Globulars",
+    "client": "WiseUp Solutions",
+    "short_description": "Community platform where people meet, build communities and connect around food, yoga and meditation.",
+    "description": "WiseUp Club is an online community where people meet, create their own communities and connect with others on a journey of self-transformation through food, yoga and meditation. Shipped as a Flutter app and a native Android build, with push notifications, file uploads and background tasks.",
+    "highlights": [
+      "Flutter app plus a native Android build",
+      "OneSignal push notifications",
+      "File uploads and foreground background tasks"
+    ],
+    "tech_stack": ["Flutter", "Kotlin", "OneSignal", "Firebase", "WebView"],
+    "icon": "assets/images/projects/wiseup_club_icon.webp",
+    "images": [
+      "assets/images/projects/wiseup_club_1.webp",
+      "assets/images/projects/wiseup_club_2.webp",
+      "assets/images/projects/wiseup_club_3.webp",
+      "assets/images/projects/wiseup_club_4.webp",
+      "assets/images/projects/wiseup_club_5.webp"
+    ],
+    "links": [
+      { "label": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.wiseup.club" }
+    ]
+  },
+  {
+    "title": "WiseUp Merchant & Agent",
+    "company_name": "Globulars",
+    "client": "WiseUp Solutions",
+    "short_description": "Merchant and agent app for cash-in, cash-out, deposits and NFC card payments.",
+    "description": "The merchant and agent companion to WiseUp Wallet. Merchants and agents register, pass KYC checks, and handle cash-in, cash-out and deposits for customers with OTP verification. Customers can pay by tapping their card over NFC, including crypto payments, or by scanning a QR code.",
+    "highlights": [
+      "NFC card reading with PIN entry, including crypto payments",
+      "Cash-in, cash-out and deposits with OTP verification",
+      "KYC verification flow",
+      "QR scan-to-pay point of sale and searchable transaction history",
+      "Dashboard with fiat and crypto wallet balances",
+      "Stripe payments and Firebase Crashlytics"
+    ],
+    "tech_stack": ["Flutter", "Cubit", "Freezed", "GetIt", "NFC", "Stripe", "Firebase"],
+    "icon": "assets/images/projects/wiseup_merchant_icon.webp",
+    "images": [
+      "assets/images/projects/wiseup_merchant_store_1.webp",
+      "assets/images/projects/wiseup_merchant_store_2.webp",
+      "assets/images/projects/wiseup_merchant_store_3.webp",
+      "assets/images/projects/wiseup_merchant_store_4.webp",
+      "assets/images/projects/wiseup_merchant_store_5.webp",
+      "assets/images/projects/wiseup_merchant_store_6.webp"
+    ],
+    "links": []
+  },
+  {
+    "title": "WiseUp POS",
+    "company_name": "Globulars",
+    "client": "WiseUp Solutions",
+    "short_description": "Point-of-sale app for WiseUp merchants with offline sales, invoices and receipt printing.",
+    "description": "A point-of-sale app for WiseUp merchants, built on the UltimatePOS mobile app and customised and rebranded for WiseUp. It supports offline sales with local storage and sync, PDF invoices and receipt printing, QR codes, and location tracking for field sales.",
+    "highlights": [
+      "Offline sales with SQLite and background sync",
+      "PDF invoices and receipt printing",
+      "QR codes and location tracking",
+      "Customised and rebranded for WiseUp"
+    ],
+    "tech_stack": ["Flutter", "Provider", "SQLite", "PDF / Printing", "Google Maps"],
+    "icon": null,
+    "images": [],
+    "links": []
+  },
+  {
+    "title": "WiseUp Auto Wise",
+    "company_name": "Globulars",
+    "client": "WiseUp Solutions",
+    "short_description": "Car-service booking app with service packages, slot booking, real-time chat and multiple payment gateways.",
+    "description": "A car-service booking app. Users add their vehicles, pick a nearby workshop and browse service packages by category, from oil changes and periodic servicing to washes, tyres and AC repair. Each package lists exactly what is included, with discounted prices. Users choose pickup or walk-in, apply coupons or wallet credit, and book a day and time slot from live availability. They chat with the workshop in real time, follow booking status and history, rate completed services and pay with Stripe, PayPal or Razorpay.",
+    "highlights": [
+      "Vehicle management and workshop selection by location",
+      "Service catalogue with categories, combo packages and itemised inclusions",
+      "Cart with pickup or walk-in service, coupons and wallet credit",
+      "Date and time slot booking with live availability",
+      "Booking history with status tracking and service ratings",
+      "Real-time chat with Cloud Firestore",
+      "Stripe, PayPal and Razorpay payments",
+      "Google Maps address picker",
+      "Push notifications with OneSignal and FCM"
+    ],
+    "tech_stack": ["Flutter", "GetX", "Cloud Firestore", "Google Maps", "Stripe", "PayPal", "Razorpay"],
+    "icon": "assets/images/projects/autowise_icon.webp",
+    "images": [
+      "assets/images/projects/autowise_store_1.webp",
+      "assets/images/projects/autowise_store_2.webp",
+      "assets/images/projects/autowise_store_3.webp",
+      "assets/images/projects/autowise_store_4.webp",
+      "assets/images/projects/autowise_store_5.webp"
+    ],
+    "links": []
+  },
+  {
+    "title": "The BC Muslim Association",
+    "company_name": "Globulars",
+    "short_description": "App for Islamic services, events and donations.",
+    "description": "This app supports the BC Muslim Association, offering services like funeral arrangements, school information and event details. Users can contact the organisation and make donations through a built-in payment flow.",
+    "highlights": [
+      "Funeral arrangements, school information and events",
+      "Donations with a built-in payment flow"
+    ],
+    "tech_stack": ["Flutter", "REST APIs", "Payment Gateway"],
+    "icon": "assets/images/projects/bcma_icon.webp",
+    "images": [
+      "assets/images/projects/bcma_1.webp",
+      "assets/images/projects/bcma_2.webp",
+      "assets/images/projects/bcma_3.webp",
+      "assets/images/projects/bcma_4.webp",
+      "assets/images/projects/bcma_5.webp",
+      "assets/images/projects/bcma_6.webp"
+    ],
+    "links": [
+      { "label": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.thebcma" }
+    ]
+  },
+  {
+    "title": "Hundeskove in Denmark",
+    "company_name": "Globulars",
+    "short_description": "Guide to dog forests, parks and free-running areas across Denmark.",
+    "description": "The Hundeskove app is a guide to dog forests, parks and free-running areas across Denmark. Users find areas on a map and share their experiences through ratings, comments and photos.",
+    "highlights": [
+      "Map of dog forests and parks across Denmark",
+      "Ratings, comments and photo submissions"
+    ],
+    "tech_stack": ["Flutter", "Google Maps", "Firebase"],
+    "icon": "assets/images/projects/hundeskove_icon.webp",
+    "images": [
+      "assets/images/projects/hundeskove_store_1.webp",
+      "assets/images/projects/hundeskove_store_2.webp",
+      "assets/images/projects/hundeskove_store_3.webp",
+      "assets/images/projects/hundeskove_store_4.webp",
+      "assets/images/projects/hundeskove_store_5.webp",
+      "assets/images/projects/hundeskove_store_6.webp",
+      "assets/images/projects/hundeskove_store_7.webp"
+    ],
+    "links": [
+      { "label": "App Store", "url": "https://apps.apple.com/dk/app/hundeskove-i-danmark-hundeskovene-dk/id501353605" }
+    ]
+  },
+  {
+    "title": "ExpressEase",
+    "company_name": "Sigi Technologies",
+    "short_description": "Food and grocery delivery from a wide selection of restaurants and stores.",
+    "description": "ExpressEase gives users a wide selection of restaurants and stores, delivering food and groceries anywhere, any time.",
+    "highlights": [
+      "Restaurant and store catalogue",
+      "Live order tracking",
+      "Push notifications"
+    ],
+    "tech_stack": ["Flutter", "GetX", "Google Maps", "Firebase"],
+    "icon": "assets/images/projects/expressease_icon.webp",
+    "images": [
+      "assets/images/projects/expressease_1.webp",
+      "assets/images/projects/expressease_2.webp",
+      "assets/images/projects/expressease_3.webp",
+      "assets/images/projects/expressease_4.webp",
+      "assets/images/projects/expressease_5.webp"
+    ],
+    "links": [
+      { "label": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.sigitechnologies.ExpressEase" }
+    ]
+  },
+  {
+    "title": "GoGo (User)",
+    "company_name": "Sigi Technologies",
+    "short_description": "Ride-hailing app with on-demand and scheduled rides and upfront pricing.",
+    "description": "GoGo offers a hassle-free way to plan travel. Users request a ride on demand or schedule one for later, add services such as wheelchairs or baby seats, and see an upfront price estimate before booking. In an emergency they can contact the admin by call or email, and they rate the driver after every ride.",
+    "highlights": [
+      "On-demand and scheduled rides",
+      "Extra services such as wheelchair and baby seats",
+      "Upfront price estimates",
+      "Driver ratings and emergency contact"
+    ],
+    "tech_stack": ["Flutter", "GetX", "Google Maps", "Firebase"],
+    "icon": "assets/images/projects/gogo_user_icon.webp",
+    "images": [
+      "assets/images/projects/gogo_user_1.webp",
+      "assets/images/projects/gogo_user_2.webp",
+      "assets/images/projects/gogo_user_3.webp",
+      "assets/images/projects/gogo_user_4.webp",
+      "assets/images/projects/gogo_user_5.webp"
+    ],
+    "links": [
+      { "label": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.sigitechnologies.gogouser" }
+    ]
+  },
+  {
+    "title": "GoGo (Driver)",
+    "company_name": "Sigi Technologies",
+    "short_description": "Driver app for a dedicated transport service for sick and elderly people in the UK.",
+    "description": "GoGo Driver supports a transport service dedicated to sick and elderly people across London and other UK cities. Drivers choose when, where and how long they work, using a bike, car or van, and their earnings grow as they drive more.",
+    "highlights": [
+      "Flexible shifts with bike, car or van",
+      "Navigation to pickups and drop-offs",
+      "Earnings tracking"
+    ],
+    "tech_stack": ["Flutter", "GetX", "Google Maps", "Firebase"],
+    "icon": "assets/images/projects/gogo_user_icon.webp",
+    "images": [],
+    "links": []
+  },
+  {
+    "title": "The Shipping Hack",
+    "company_name": "Sigi Technologies",
+    "short_description": "Send, receive and track parcels locally and internationally.",
+    "description": "The Shipping Hack makes it easy to send or receive parcels and track deliveries, whether it's a small local package or an important international shipment.",
+    "highlights": [
+      "Local and international parcel booking",
+      "Delivery tracking"
+    ],
+    "tech_stack": ["Flutter", "GetX", "Google Maps", "Firebase"],
+    "icon": "assets/images/projects/shipping_hack_icon.webp",
+    "images": [
+      "assets/images/projects/shipping_hack_1.webp",
+      "assets/images/projects/shipping_hack_2.webp",
+      "assets/images/projects/shipping_hack_3.webp",
+      "assets/images/projects/shipping_hack_4.webp",
+      "assets/images/projects/shipping_hack_5.webp"
+    ],
+    "links": [
+      { "label": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.sigitechnologies.theShippingUser" }
+    ]
+  },
+  {
+    "title": "Woow Look",
+    "company_name": "Sigi Technologies",
+    "short_description": "Salon and spa booking app.",
+    "description": "Woow Look is a convenient, trustworthy way to book haircuts, massages and last-minute nail appointments with local salons and spas in a few clicks.",
+    "highlights": [
+      "Browse and book local salons and spas",
+      "Last-minute appointments"
+    ],
+    "tech_stack": ["Flutter", "GetX", "Firebase"],
+    "icon": "assets/images/projects/woow_look_icon.webp",
+    "images": [
+      "assets/images/projects/woow_look_1.webp",
+      "assets/images/projects/woow_look_2.webp",
+      "assets/images/projects/woow_look_3.webp",
+      "assets/images/projects/woow_look_4.webp",
+      "assets/images/projects/woow_look_5.webp",
+      "assets/images/projects/woow_look_6.webp"
+    ],
+    "links": [
+      { "label": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.shahnawazdesign.woowLook" }
+    ]
+  },
+  {
+    "title": "Woow Seller",
+    "company_name": "Sigi Technologies",
+    "short_description": "Salon and stylist app for managing services, staff and bookings.",
+    "description": "Salons and individual stylists sign up, list their style, beauty and wellness services, manage appointments and bookings, add employees with their specialities, and get real-time notifications about appointment updates.",
+    "highlights": [
+      "Salon or individual stylist registration",
+      "Service listings and employee management",
+      "Appointment management with real-time notifications"
+    ],
+    "tech_stack": ["Flutter", "GetX", "Firebase"],
+    "icon": "assets/images/projects/woow_seller_icon.webp",
+    "images": [
+      "assets/images/projects/woow_seller_1.webp",
+      "assets/images/projects/woow_seller_2.webp",
+      "assets/images/projects/woow_seller_3.webp",
+      "assets/images/projects/woow_seller_4.webp",
+      "assets/images/projects/woow_seller_5.webp"
+    ],
+    "links": [
+      { "label": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.shahnawazdesign.woowLooksaller" }
+    ]
+  },
+  {
+    "title": "BumpWell",
+    "company_name": "Personal",
+    "short_description": "Private, offline pregnancy and baby tracker, from the first week of pregnancy to the baby's first birthday.",
+    "description": "BumpWell is a calm, private companion from the first week of pregnancy to the baby's first birthday. Everything lives on one calendar you can read and edit at a glance, and all health data stays on the phone: no account, no cloud, fully offline. Weekly guides show how far along you are and your baby's typical size, and after birth the same app tracks the baby's growth and the mother's recovery.",
+    "highlights": [
+      "Week-by-week guide, tips and articles",
+      "Daily log for mood, symptoms, sleep, temperature and notes, editable from the calendar",
+      "Weight, kick counter, blood pressure, glucose, water and activity with charts",
+      "Medicine and appointment reminders",
+      "PDF and HTML reports to share with a doctor or midwife",
+      "Offline-first with optional PIN lock, in 15 languages"
+    ],
+    "tech_stack": ["Flutter", "BLoC", "Clean Architecture", "Drift (SQLite)", "go_router", "GetIt", "PDF", "AdMob"],
+    "icon": "assets/images/projects/bumpwell_icon.png",
+    "images": [
+      "assets/images/projects/bumpwell_1.jpg",
+      "assets/images/projects/bumpwell_2.jpg",
+      "assets/images/projects/bumpwell_3.jpg",
+      "assets/images/projects/bumpwell_4.jpg",
+      "assets/images/projects/bumpwell_5.jpg",
+      "assets/images/projects/bumpwell_6.jpg",
+      "assets/images/projects/bumpwell_7.jpg"
+    ],
+    "links": []
+  },
+  {
+    "title": "Breathloom",
+    "company_name": "Personal",
+    "short_description": "Guided breathing and wellness app with 18 exercises, voice guidance and progress tracking.",
+    "description": "Breathloom guides users through 18 breathing exercises, from box breathing and 4-7-8 to the physiological sigh and gentle pregnancy breathing, with animated sessions, voice guidance and calming sounds. Users can build their own custom exercises, get personalised recommendations, set daily reminders and follow their progress and history. Accounts sync across devices with Firebase, and premium features are sold as subscriptions.",
+    "highlights": [
+      "18 guided exercises plus custom exercise builder",
+      "Animated sessions with text-to-speech voice guidance and sounds",
+      "Personalised recommendations, progress and history",
+      "Daily reminders with local notifications",
+      "Google sign-in and Firestore sync",
+      "Subscriptions with RevenueCat, multi-language, light and dark themes"
+    ],
+    "tech_stack": ["Flutter", "BLoC / Cubit", "Firebase Auth", "Cloud Firestore", "Hive", "RevenueCat", "Text-to-Speech"],
+    "icon": "assets/images/projects/breathloom_icon.png",
+    "images": [
+      "assets/images/projects/breathloom_1.jpg",
+      "assets/images/projects/breathloom_2.jpg",
+      "assets/images/projects/breathloom_3.jpg",
+      "assets/images/projects/breathloom_4.jpg",
+      "assets/images/projects/breathloom_5.jpg",
+      "assets/images/projects/breathloom_6.jpg",
+      "assets/images/projects/breathloom_7.jpg",
+      "assets/images/projects/breathloom_8.jpg"
+    ],
+    "links": []
+  },
+  {
+    "title": "Expiration Tracker",
+    "company_name": "Personal",
+    "short_description": "Track product expiry dates by scanning barcodes and get reminded before things go off.",
+    "description": "A personal app for keeping track of food, medicine and other products before they expire. Add items by scanning their barcode or taking a photo, and get local and push reminders ahead of each expiry date. Data syncs through Supabase and is cached locally with Hive.",
+    "highlights": [
+      "Barcode scanning and photo capture",
+      "Scheduled reminders with background tasks",
+      "Supabase sync with Hive offline cache"
+    ],
+    "tech_stack": ["Flutter", "Riverpod", "Supabase", "Hive", "Firebase Messaging", "WorkManager"],
+    "icon": null,
+    "images": [],
+    "links": []
+  },
+  {
+    "title": "Washing Tracker",
+    "company_name": "Personal",
+    "short_description": "Never forget your laundry again: persistent reminders until you're done.",
+    "description": "Start a wash, and the app keeps reminding you with persistent alarms and notifications until the laundry is out. Timers keep running in the background and survive app restarts.",
+    "highlights": [
+      "Persistent alarms until the session is marked done",
+      "Background timers with WorkManager",
+      "Local storage with Hive"
+    ],
+    "tech_stack": ["Flutter", "Riverpod", "Hive", "WorkManager", "Local Notifications"],
+    "icon": null,
+    "images": [],
+    "links": []
+  },
+  {
+    "title": "Step Counter",
+    "company_name": "Personal",
+    "short_description": "Pedometer with daily goals, water intake, weight tracking and achievements.",
+    "description": "A fitness app that counts steps with the device pedometer and a foreground service, shows progress charts, and tracks water intake and weight. Achievements keep users motivated.",
+    "highlights": [
+      "Step counting with a foreground service",
+      "Charts for steps, water intake and weight",
+      "Achievements and reminders",
+      "AdMob monetisation"
+    ],
+    "tech_stack": ["Flutter", "BLoC", "SQLite", "fl_chart", "AdMob"],
+    "icon": null,
+    "images": [],
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/bilal-azmat/step_counter_app" }
+    ]
+  },
+  {
+    "title": "Tax Finder",
+    "company_name": "Personal",
+    "short_description": "Pakistan income tax, property tax, dividend tax and GST calculator.",
+    "description": "A calculator for Pakistani taxes: income tax, property tax by value and age, dividend tax, and provincial GST, including Khyber Pakhtunkhwa rates.",
+    "highlights": [
+      "Income, property and dividend tax",
+      "Province-wise GST calculator"
+    ],
+    "tech_stack": ["Flutter", "Dart"],
+    "icon": null,
+    "images": [],
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/bilal-azmat/tax_finder" }
+    ]
+  },
+  {
+    "title": "Kanban Task Manager",
+    "company_name": "Personal",
+    "short_description": "Kanban board for creating and managing tasks, with CSV export.",
+    "description": "A Kanban-style task manager. Create tasks, move them across columns and export everything to CSV. Data lives in Cloud Firestore.",
+    "highlights": [
+      "Kanban board with To Do, In Progress and Done columns",
+      "Cloud Firestore storage",
+      "CSV export"
+    ],
+    "tech_stack": ["Flutter", "GetX", "Cloud Firestore"],
+    "icon": null,
+    "images": [],
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/bilal-azmat/kanban-app-task-management-" }
+    ]
+  },
+  {
+    "title": "ChatGPT Client",
+    "company_name": "Personal",
+    "short_description": "Chat app built on the OpenAI API with locally saved conversations.",
+    "description": "A Flutter chat client for the OpenAI API. Conversations are saved locally in SQLite so users can come back to earlier chats.",
+    "highlights": [
+      "OpenAI API integration",
+      "Chat history stored in SQLite"
+    ],
+    "tech_stack": ["Flutter", "BLoC", "SQLite", "OpenAI API"],
+    "icon": null,
+    "images": [],
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/bilal-azmat/ChatGPT-app" }
+    ]
+  }
+]

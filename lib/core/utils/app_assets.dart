@@ -5,4 +5,7 @@ abstract class AppAssets {
   static const androidLogo = '$_basePath/android.svg';
   static const scrappingLogo = '$_basePath/slider.svg';
   static const uiDesignLogo = '$_basePath/ruler.svg';
+  static const trueMedLogo = '$_basePath/truemed.png';
+  static const sigiLogo = '$_basePath/sigi.png';
+  static const globularsLogo = '$_basePath/globulars.png';
 }

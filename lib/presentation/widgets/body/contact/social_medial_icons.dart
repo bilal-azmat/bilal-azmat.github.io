@@ -11,47 +11,69 @@ class SocialMediaIcons extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Wrap(
+      spacing: 12,
+      runSpacing: 12,
       children: [
-        SocialMediaIconBtn(
-          icon: FontAwesomeIcons.facebook,
-          link: SocialLinks.facebook,
-        ),
-        SocialMediaIconBtn(
-          icon: FontAwesomeIcons.instagram,
-          link: SocialLinks.instagram,
-        ),
         SocialMediaIconBtn(
           icon: FontAwesomeIcons.linkedinIn,
           link: SocialLinks.linkedin,
         ),
         SocialMediaIconBtn(
-          icon: FontAwesomeIcons.twitter,
-          link: SocialLinks.twitter,
+          icon: FontAwesomeIcons.github,
+          link: SocialLinks.github,
+        ),
+        SocialMediaIconBtn(
+          icon: FontAwesomeIcons.googlePlay,
+          link: SocialLinks.playStore,
         ),
       ],
     );
   }
 }
 
-class SocialMediaIconBtn extends StatelessWidget {
-  const SocialMediaIconBtn({super.key, required this.icon, this.link});
+class SocialMediaIconBtn extends StatefulWidget {
+  const SocialMediaIconBtn({super.key, required this.icon, required this.link});
+
   final IconData icon;
-  final String? link;
+  final String link;
+
+  @override
+  State<SocialMediaIconBtn> createState() => _SocialMediaIconBtnState();
+}
+
+class _SocialMediaIconBtnState extends State<SocialMediaIconBtn> {
+  bool _hovered = false;
 
   @override
   Widget build(BuildContext context) {
-    return TextButton(
-      style: IconButton.styleFrom(
-        shape: const CircleBorder(),
-        padding: const EdgeInsets.all(15),
-      ),
-      onPressed: () {
-        html.window.open(link!, '_blank');
-      },
-      child: Icon(
-        icon,
-        color: AppColors.primaryColor,
-        size: 32,
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      onEnter: (_) => setState(() => _hovered = true),
+      onExit: (_) => setState(() => _hovered = false),
+      child: GestureDetector(
+        onTap: () => html.window.open(widget.link, '_blank'),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 220),
+          width: 46,
+          height: 46,
+          transform: Matrix4.translationValues(0, _hovered ? -4 : 0, 0),
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            gradient: _hovered ? AppColors.primaryGradient : null,
+            color: _hovered ? null : AppColors.white.withValues(alpha: .05),
+            border: Border.all(
+              color: _hovered ? Colors.transparent : AppColors.glassBorder,
+            ),
+            boxShadow: [
+              if (_hovered)
+                BoxShadow(
+                  color: AppColors.primaryColor.withValues(alpha: .5),
+                  blurRadius: 20,
+                ),
+            ],
+          ),
+          child: Icon(widget.icon, size: 18, color: AppColors.white),
+        ),
       ),
     );
   }

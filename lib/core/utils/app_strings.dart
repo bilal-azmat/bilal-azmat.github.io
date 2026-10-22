@@ -1,18 +1,23 @@
 abstract class AppStrings {
-  static const String developerName = 'Rady Haggag';
-  static const String helloIM = 'Hello, i’m';
-  static const String introMsg =
-      "Flutter developer with +2 years of experience. I have completed many projects that prove my ability to provide creative and high-quality solutions.";
-  static String aboutMeMsg =
-      "I'm a Flutter developer with a good understanding of the Flutter framework, I have experience in UI design, API integration, clean code writing and knowledge of solid principles and clean architecture. I have completed many projects that prove my ability to provide creative and high-quality solutions and finish them in an almost complete way with a great user experience without any problems facing users";
-  static const String numOfExperience = '2+';
-  static const String experienceMsg =
-      'Years of experience, Specialized in building apps, while ensuring a seamless web experience for end users.';
-  static const String servicesIOffer = 'The services i offer:';
+  static const String developerName = 'Bilal Azmat';
+  static const String helloIM = 'Hello, I’m';
+
+  static const String aboutEyebrow = '01 / About';
+  static const String aboutTitle = 'Building apps people rely on';
+  static const String experienceEyebrow = '02 / Experience';
+  static const String workingExpIOffer = 'Where I’ve worked';
+  static const String skillsEyebrow = '03 / Skills';
+  static const String skillsIOffer = 'My toolkit';
+  static const String servicesEyebrow = '04 / Services';
+  static const String servicesIOffer = 'What I can do for you';
+  static const String education = 'Education';
+  static const String projectsEyebrow = '05 / Projects';
   static const String featuredProjects = 'Featured projects';
   static const String projectsMsg =
-      "I have completed many projects that prove my ability to provide creative and high-quality solutions and finish them in an almost complete way with a great user experience without any problems facing users.";
+      "A selection of the production apps I've built and led across healthcare, fintech, streaming, delivery and booking, plus a few personal projects. Tap any project to see screenshots and details.";
+  static const String allProjects = 'All';
+  static const String contactEyebrow = '06 / Contact';
+  static const String contactWithMe = 'Let’s build something together';
   static const String contactMsg =
-      "For any service and work you can contact with me by send an email or by our social media accounts.";
-  static const String contactWithMe = 'Contact with me';
+      "Have a role, a project or just a question? Send me a message or reach out on any of the channels below.";
 }

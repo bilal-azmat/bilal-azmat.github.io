@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/utils/app_strings.dart';
-import '../../../../core/utils/app_styles.dart';
-
+import '../../../../core/widgets/section_header.dart';
 import 'detailed_services_grid.dart';
 
 class DetailedServicesSection extends StatelessWidget {
@@ -10,17 +9,15 @@ class DetailedServicesSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        FittedBox(
-          child: Text(
-            AppStrings.servicesIOffer,
-            style: AppStyles.s32,
-          ),
+        SectionHeader(
+          eyebrow: AppStrings.servicesEyebrow,
+          title: AppStrings.servicesIOffer,
         ),
-        const SizedBox(height: 32),
-        const DetailedServicesGrid(),
+        SizedBox(height: 40),
+        DetailedServicesGrid(),
       ],
     );
   }
