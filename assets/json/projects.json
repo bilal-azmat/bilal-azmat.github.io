@@ -498,6 +498,46 @@
     ]
   },
   {
+    "title": "Slice by TZA POS",
+    "company_name": "Personal",
+    "client": "Slice by TZA",
+    "short_description": "Point-of-sale and back-office system for a pizza shop, with a kitchen display, stock, reports and live sync between devices.",
+    "description": "Slice by TZA POS runs a pizza shop from one Flutter codebase, live on the web and available as an Android app. Cashiers take dine-in, takeaway and delivery orders with sizes, crusts, half-and-half pizzas, deals, promo codes and loyalty stamps, then print a receipt over Bluetooth or as a PDF. New orders reach the kitchen display with a sound alert and move through New, In oven, Ready and On the way. Owners manage the menu, stock recipes, purchases, customers, delivery areas, riders and staff logins, and follow sales, purchases and profit per item in reports with charts and PDF export. Each device keeps working from local storage, while Firestore syncs the shop's devices live and keeps daily cloud backups. The app is available in English and Urdu.",
+    "highlights": [
+      "Order flow for dine-in, takeaway and delivery with cash, card and online payments",
+      "Sizes, crusts, extra toppings, half-and-half pizzas, deals, promo codes and loyalty stamps",
+      "Kitchen display with order alerts and live status tracking",
+      "Bluetooth thermal receipts (ESC/POS) and PDF receipts",
+      "Stock with per-product recipes, low-stock alerts and profit per item",
+      "Reports with sales, purchases, profit, busy hours, top products and PDF export",
+      "Role-based staff logins for owner, cashier and kitchen",
+      "Live sync between devices and daily cloud backups with Firestore",
+      "English and Urdu, built with Clean Architecture and BLoC"
+    ],
+    "tech_stack": [
+      "Flutter",
+      "BLoC",
+      "Clean Architecture",
+      "GetIt",
+      "Hive",
+      "Firebase Auth",
+      "Cloud Firestore",
+      "fl_chart",
+      "PDF",
+      "ESC/POS Bluetooth"
+    ],
+    "icon": "assets/images/projects/slice_pos_icon.png",
+    "images": [
+      "assets/images/projects/slice_pos_1.jpg",
+      "assets/images/projects/slice_pos_2.jpg",
+      "assets/images/projects/slice_pos_3.jpg",
+      "assets/images/projects/slice_pos_4.jpg",
+      "assets/images/projects/slice_pos_5.jpg",
+      "assets/images/projects/slice_pos_6.jpg"
+    ],
+    "links": [{ "label": "Live app", "url": "https://slice-by-tza.web.app" }]
+  },
+  {
     "title": "BumpWell",
     "company_name": "Personal",
     "short_description": "Private, offline pregnancy and baby tracker, from the first week of pregnancy to the baby's first birthday.",
@@ -579,40 +619,6 @@
     "icon": null,
     "images": [],
     "links": []
-  },
-  {
-    "title": "Step Counter",
-    "company_name": "Personal",
-    "short_description": "Pedometer with daily goals, water intake, weight tracking and achievements.",
-    "description": "A fitness app that counts steps with the device pedometer and a foreground service, shows progress charts, and tracks water intake and weight. Achievements keep users motivated.",
-    "highlights": [
-      "Step counting with a foreground service",
-      "Charts for steps, water intake and weight",
-      "Achievements and reminders",
-      "AdMob monetisation"
-    ],
-    "tech_stack": ["Flutter", "BLoC", "SQLite", "fl_chart", "AdMob"],
-    "icon": null,
-    "images": [],
-    "links": [
-      { "label": "GitHub", "url": "https://github.com/bilal-azmat/step_counter_app" }
-    ]
-  },
-  {
-    "title": "Tax Finder",
-    "company_name": "Personal",
-    "short_description": "Pakistan income tax, property tax, dividend tax and GST calculator.",
-    "description": "A calculator for Pakistani taxes: income tax, property tax by value and age, dividend tax, and provincial GST, including Khyber Pakhtunkhwa rates.",
-    "highlights": [
-      "Income, property and dividend tax",
-      "Province-wise GST calculator"
-    ],
-    "tech_stack": ["Flutter", "Dart"],
-    "icon": null,
-    "images": [],
-    "links": [
-      { "label": "GitHub", "url": "https://github.com/bilal-azmat/tax_finder" }
-    ]
   },
   {
     "title": "Kanban Task Manager",
